@@ -155,16 +155,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 
 .splash {
     /* absolute center .splash within .splash-container */
-    width: 80%;
-    height: 50%;
+    width: 85%;
     margin: auto;
-    position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
-    background: rgba(255,255,255, 0.5);
     border: 4px solid #2d3e50;
     border-radius: 5px;
+    padding: 5px;
 }
 
 /* This is the main heading that appears on the blue section */
@@ -181,7 +178,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: #2d3e50;
+    color: #222;
     font-weight: 800;
     letter-spacing: 0.05em;
     opacity: 0.8;
@@ -291,11 +288,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 @media (max-width: 600px), (min-width: 800px) {
     .splash {
         /* absolute center .splash within .splash-container */
-        width: 80%;
-        height: 20%;
+        width: 70%;
         margin: auto;
-        position: absolute;
-        top: 0px; left: 0; bottom: 0; right: 0;
+        position: relative;
+        top: 200px;
         text-align: center;
         text-transform: uppercase;
         background: rgb(122,188,255, 0.8);
