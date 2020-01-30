@@ -22,7 +22,7 @@ h4,
 h5,
 h6,
 label {
-    color: #34495e;
+    color: #fff;
 }
 
 .pure-img-responsive {
@@ -171,7 +171,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     color: #2d3e50;
     padding: 1em 1.6em;
@@ -347,6 +346,16 @@ html > body > div:nth-of-type(2) > div > div > img{
         width: 100%;
         height: auto;
 
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label {
+        color: #fff;
     }
 
 
