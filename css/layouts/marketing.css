@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
@@ -71,15 +72,15 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #1f8dd6;
-    color: white;
+    background-color: #fff;
+    color: #2d3e50;
     padding: 0.5em 2em;
     border-radius: 5px;
 }
 
 a.pure-button-primary {
-    background: white;
-    color: #1f8dd6;
+    background: #2d3e50;
+    color: #fff;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -96,7 +97,13 @@ a.pure-button-primary {
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-    background: #2d3e50;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7abcff+0,60abf8+0,2d3e50+100 */
+background: rgb(122,188,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 0%, rgba(45,62,80,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 0%,rgba(45,62,80,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 0%,rgba(45,62,80,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#2d3e50',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -132,12 +139,15 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: #1f8dd6;
+    background: rgb(255,255,255, 0.5) url("https://vabeachtowncenter.com/wp-content/uploads/tcnight.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: 70%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -152,23 +162,27 @@ a.pure-button-primary {
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
+    background: rgba(255,255,255, 0.5);
+    border: 4px solid #2d3e50;
+    border-radius: 5px;
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border: 3px solid white;
+    font-weight: 600;
+    color: #2d3e50;
     padding: 1em 1.6em;
     font-weight: 100;
-    border-radius: 5px;
     line-height: 1em;
+    
 }
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: white;
+    color: #2d3e50;
+    font-weight: 800;
     letter-spacing: 0.05em;
     opacity: 0.8;
 }
@@ -256,6 +270,7 @@ a.pure-button-primary {
 
     /* We decrease the width of the .splash, since we have more width
     to work with */
+ 
     .splash {
         width: 50%;
         height: 50%;
