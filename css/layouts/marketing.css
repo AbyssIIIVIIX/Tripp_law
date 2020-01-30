@@ -79,7 +79,7 @@ label {
 }
 
 a.pure-button-primary {
-    background: #2d3e50;
+    color: rgb(122,188,255, 0.8);;
     color: #fff;
     border-radius: 5px;
     font-size: 120%;
@@ -147,7 +147,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 70%;
+    height: 100%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -224,7 +224,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 .content-subhead {
     color: #1f8dd6;
 }
-    .content-subhead i {
+
+.content-subhead i {
         margin-right: 7px;
     }
 
@@ -286,6 +287,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
         border: none;
     }
 
+}
+@media (max-width: 600px), (min-width: 800px) {
+    .splash {
+        /* absolute center .splash within .splash-container */
+        width: 80%;
+        height: 20%;
+        margin: auto;
+        position: absolute;
+        top: 0px; left: 0; bottom: 0; right: 0;
+        text-align: center;
+        text-transform: uppercase;
+        background: rgb(122,188,255, 0.8);
+        border: 4px solid #2d3e50;
+        border-radius: 5px;
+     }
 }
 
 /*
