@@ -303,6 +303,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
         border: 2px solid #2d3e50;
         border-radius: 5px;
      }
+     .home-menu .pure-menu-heading {
+        color: white;
+        font-weight: 400;
+        font-size: 90%;
+    }
+    
 }
 
 /*
