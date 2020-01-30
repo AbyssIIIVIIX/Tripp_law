@@ -22,7 +22,7 @@ h4,
 h5,
 h6,
 label {
-    color: #fff;
+    color: #000;
 }
 
 .pure-img-responsive {
@@ -349,15 +349,9 @@ html > body > div:nth-of-type(2) > div > div > img{
 
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    label {
-        color: #fff;
-    }
+
+
+    
 
 
 
