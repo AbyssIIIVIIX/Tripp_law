@@ -139,7 +139,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
  */
 
 .splash-container {
-    background: rgb(255,255,255, 0.5) url(/img/common/tc.jpg);
+    background: rgb(255,255,255, 0.5) url("/img/common/tc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
