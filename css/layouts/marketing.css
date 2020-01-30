@@ -314,6 +314,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
     }
 }
 
+@media (max-width: 414px){
+    .splash {
+        /* absolute center .splash within .splash-container */
+        width: 70%;
+        margin: auto;
+        position: relative;
+        top: 200px;
+        text-align: center;
+        text-transform: uppercase;
+        background: rgb(122,188,255, 0.8);
+        border: 2px solid #2d3e50;
+        border-radius: 5px;
+     }
+     .home-menu .pure-menu-heading {
+        color: white;
+        font-weight: 400;
+        font-size: 90%;
+    }
+    
+    .splash-head {
+        font-size: 200%;
+       
+    }
+
+
+
+}
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large devices, we want to over-ride some
