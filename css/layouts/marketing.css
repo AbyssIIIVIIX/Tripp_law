@@ -323,7 +323,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
         top: 200px;
         text-align: center;
         text-transform: uppercase;
-        background: rgb(122,188,255, 0.8);
+        background: rgb(122,188,255, 0.85);
         border: 2px solid #2d3e50;
         border-radius: 5px;
      }
