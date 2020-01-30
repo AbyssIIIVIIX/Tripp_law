@@ -171,9 +171,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    font-weight: bolder;
     color: #2d3e50;
     padding: 1em 1.6em;
     font-weight: 100;
