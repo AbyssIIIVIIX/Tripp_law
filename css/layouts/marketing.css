@@ -180,6 +180,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
     
 }
 
+html > body > div:nth-of-type(2) > div > div > img{
+    width: 100%;
+    height: auto;
+
+}
+
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
     color: #222;
@@ -336,6 +342,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
     .splash-head {
         font-size: 200%;
        
+    }
+    html > body > div:nth-of-type(2) > div > div > img{
+        width: 100%;
+        height: auto;
+
     }
 
 
