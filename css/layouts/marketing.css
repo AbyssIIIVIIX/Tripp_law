@@ -290,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
     }
 
 }
-@media (max-width: 600px), (min-width: 800px) {
+@media (max-width: 800px), (min-width: 600px) {
     .splash {
         /* absolute center .splash within .splash-container */
         width: 70%;
