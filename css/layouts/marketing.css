@@ -11,7 +11,7 @@
  */
 body {
     line-height: 1.7em;
-    color: #7f8c8d;
+    color: #000;
     font-size: 13px;
 }
 
@@ -28,6 +28,7 @@ label {
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+    margin: auto;
 }
 
 /*
@@ -74,7 +75,7 @@ label {
 .pure-button {
     background-color: #fff;
     color: #2d3e50;
-    padding: 0.5em 2em;
+    padding: 1em 3em;
     border-radius: 5px;
 }
 
@@ -83,6 +84,7 @@ a.pure-button-primary {
     color: #fff;
     border-radius: 5px;
     font-size: 120%;
+    margin: auto;
 }
 
 
@@ -91,22 +93,24 @@ a.pure-button-primary {
  * I want to customize how my .pure-menu looks at the top of the page
  */
 
-.home-menu {
-    padding: 0.5em;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
-.home-menu {
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7abcff+0,60abf8+0,2d3e50+100 */
-background: rgb(122,188,255); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 0%, rgba(45,62,80,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 0%,rgba(45,62,80,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 0%,rgba(45,62,80,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#2d3e50',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+    
+.home-menu {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#553322+0,cc9966+100&1+0,1+62,0.7+68,0+100 */
+background: -moz-linear-gradient(-45deg,  rgba(85,51,34,1) 0%, rgba(159,114,76,1) 62%, rgba(166,120,80,0.7) 68%, rgba(204,153,102,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(85,51,34,1) 0%,rgba(159,114,76,1) 62%,rgba(166,120,80,0.7) 68%,rgba(204,153,102,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(85,51,34,1) 0%,rgba(159,114,76,1) 62%,rgba(166,120,80,0.7) 68%,rgba(204,153,102,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#553322', endColorstr='#00cc9966',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+padding: 0.5em;
+text-align: center;
+box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
+
+
+
 .pure-menu-selected>.pure-menu-link, .pure-menu-selected>.pure-menu-link:visited {
-    color: #fff;
+    color: #ff9933;
+    text-shadow: 3px 3px #000;
 }
 
 .pure-menu.pure-menu-fixed {
@@ -119,22 +123,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 .home-menu .pure-menu-heading {
     color: white;
     font-weight: 400;
-    font-size: 90%;
+    font-size: 120%;
 }
 
 
 .home-menu .pure-menu-selected a {
-    color: white;
+    color: #9b7957;
+    
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 24px;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #AECFE5;
+    color: #ff9933
+    ;
 }
 
 
@@ -159,24 +167,49 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 }
 
 .splash {
-    /* absolute center .splash within .splash-container */
-    width: 85%;
+    background: rgba(255, 255, 255, 0.5) url("https://img1.wsimg.com/isteam/stock/11568");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
     margin: auto;
+    position: relative;
+    top: 200px;
     text-align: center;
     text-transform: uppercase;
-    border: 2px solid #2d3e50;
     border-radius: 5px;
-    padding: 5px;
+    padding: 1em;
+}
+
+.splash img {
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 15%;
+}
+.splash-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 15px;
+    padding: 1.5em 0;
+    
 }
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
+    max-width: 100%;
     font-size: 20px;
-    color: #2d3e50;
-    padding: 1em 1.6em;
+    color: #000;
     font-weight: 100;
-    line-height: 1em;
-    
+    margin: auto;
+    line-height:1.2em;
+}
+
+.splash-subhead {
+    width: 100%;
+    color: #000;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    margin: auto;
 }
 
 html > body > div:nth-of-type(2) > div > div > img{
@@ -186,12 +219,6 @@ html > body > div:nth-of-type(2) > div > div > img{
 }
 
 /* This is the subheading that appears on the blue section */
-.splash-subhead {
-    color: #222;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    opacity: 0.8;
-}
 
 /*
  * -- CONTENT STYLES --
@@ -204,7 +231,7 @@ html > body > div:nth-of-type(2) > div > div > img{
     width: 100%;
     min-height: 12%;
     z-index: 2;
-    background: white;
+    background: #fff;
 
 }
 
@@ -228,7 +255,8 @@ html > body > div:nth-of-type(2) > div > div > img{
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #1f8dd6;
+    color: #000;
+    font-size: 24px;
 }
 
 .content-subhead i {
@@ -237,8 +265,13 @@ html > body > div:nth-of-type(2) > div > div > img{
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
-    color: #aaa;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#553322+0,cc9966+100&1+0,1+62,0.7+68,0+100 */
+background: -moz-linear-gradient(-45deg,  rgba(85,51,34,1) 0%, rgba(159,114,76,1) 62%, rgba(166,120,80,0.7) 68%, rgba(204,153,102,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(85,51,34,1) 0%,rgba(159,114,76,1) 62%,rgba(166,120,80,0.7) 68%,rgba(204,153,102,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(85,51,34,1) 0%,rgba(159,114,76,1) 62%,rgba(166,120,80,0.7) 68%,rgba(204,153,102,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#553322', endColorstr='#00cc9966',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    color: #000;
 }
 
 /* This is the class used for the footer */
@@ -258,7 +291,7 @@ html > body > div:nth-of-type(2) > div > div > img{
 
     /* We increase the body font size */
     body {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     /* We can align the menu header to the left, but float the
@@ -278,10 +311,7 @@ html > body > div:nth-of-type(2) > div > div > img{
     /* We decrease the width of the .splash, since we have more width
     to work with */
  
-    .splash {
-        width: 50%;
-        height: 50%;
-    }
+
 
     .splash-head {
         font-size: 250%;
@@ -295,44 +325,22 @@ html > body > div:nth-of-type(2) > div > div > img{
     }
 
 }
-@media (max-width: 800px), (min-width: 600px) {
-    .splash {
-        /* absolute center .splash within .splash-container */
-        width: 70%;
-        margin: auto;
-        position: relative;
-        top: 200px;
-        text-align: center;
-        text-transform: uppercase;
-        background: rgb(122,188,255, 0.8);
-        border: 2px solid #2d3e50;
-        border-radius: 5px;
-     }
-     .home-menu .pure-menu-heading {
-        color: white;
-        font-weight: 400;
-        font-size: 90%;
-    }
-    
-    .splash-head {
-        font-size: 200%;
-    }
-}
 
 @media (max-width: 414px){
     .splash {
-        /* absolute center .splash within .splash-container */
-        width: 70%;
+        background: rgba(255, 255, 255, 0.5) url("https://img1.wsimg.com/isteam/stock/11568");
+        background-position: center;
+        background-size: cover;
+        width: 80%;
         margin: auto;
         position: relative;
-        top: 120px;
+        top: 150px;
         text-align: center;
         text-transform: uppercase;
-        background: rgb(122,188,255, 0.85);
-        border: 2px solid #2d3e50;
+        border: 5px solid #fff;
         border-radius: 5px;
-     }
-     .home-menu .pure-menu-heading {
+    }
+         .home-menu .pure-menu-heading {
         color: white;
         font-weight: 400;
         font-size: 90%;
