@@ -185,8 +185,14 @@ a.pure-button-primary {
       font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
       background:url("https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-1-900x900.jpg");
       color: #fff;
-      padding: 50px 0;;
+      padding: 50px 0;
       text-align: center;
+    }
+
+    .container-3{
+      display: flex;
+      font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+
     }
   }
 
@@ -294,9 +300,8 @@ a.pure-button-primary {
   
 }
 
-.box-4 {
+  .box-4 {
     flex: 3;
-    align-items: flex-end;
-   
+  
 }
 
