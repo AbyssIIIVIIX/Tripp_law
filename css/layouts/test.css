@@ -60,17 +60,15 @@ box-shadow: 0 1px 6px rgba(0,0,0,.5);
 }
 
 .center {
-    margin-top: 4em;
+    margin-top: 2em;
     text-align: center;
 }
 .center a {
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.1em;
-    color: #F34A4E;
-    border-bottom: 1px solid #F34A4E;
+    color: rgb(60, 122, 255);
+    border-bottom: 1px solid rgb(60, 122, 255);
     transition: all .275s;
 }
 .center a:hover,
@@ -205,19 +203,48 @@ a.pure-button-primary {
       flex: 2;
     }
 
-
     .container-3{
       display: flex;
       font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+      align-items: center;
+    }
 
+    .about-container{
+      display: flex;
+      padding: 1em;
+      justify-content: space-between;
+    }
+
+    footer {
+      color: #fff;
+      background: #222;
+      padding: 1em;
+    }
+    
+    .container-3 .policy{
+      flex: 1;
+    }
+    
+    .container-3 h5{
+      flex: 3;
+      text-align: center;
+    }
+    .container-3 ul li {
+      flex: 2;
+      margin-right: 2em;
     }
   
   }
 
 
+.about-container div{
+  flex: 2;
+}
 
-
-
+#about {
+  background: rgba(255, 255, 240, 0.7);
+  padding: 1em;
+}
   .content h2 {
       text-align: center;
   }
@@ -296,7 +323,7 @@ a.pure-button-primary {
   }
   
   .flex-inner li {
-    width: 100px;
+    width: 15000px;
   }
 
   .box-1 {
@@ -319,15 +346,25 @@ a.pure-button-primary {
   
 }
 
-footer {
-  color: #fff;
-  background: #222;
-  padding: 1em;
+.hours{
+  text-align: center;
+  background: #ff9933;
+  text-shadow: 1px 1px 1px #fff;
 }
 
-.container-3 .policy, h5, ul{
-  flex: 2;
+.hours ul{
+  margin: auto;
+  font-size:20px;
+  font-weight: bold;
+  list-style: none;
 }
+
+.hours ul li{
+  display: inline;
+}
+
+
+
 
 
 
