@@ -141,6 +141,12 @@ img {
     background: rgba(255, 255, 255, 0.4);
 }
 
+.splash-head img{
+  width: 50%;
+  display:block;
+  margin: auto;
+}
+
 .pure-button {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9933+0,663311+53 */
     background: rgb(255,153,51); /* Old browsers */
@@ -243,17 +249,15 @@ a.pure-button-primary {
 
 .about-container .tripp{
   flex: 2;
-  order: 2;
 }
 
 .about-container .tripp img{
-width: 100%;
-margin: auto;
+width: 60%;
+margin-left: 20%;
 }
 
 .about-container #about{
   flex: 2;
-  order: 1;
 }
 
 
@@ -364,9 +368,16 @@ margin: auto;
 }
 
 .hours{
-  text-align: center;
-  background: #ff9933;
-  text-shadow: 1px 1px 1px #fff;
+text-align: center;
+color: #fff;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9933+0,663311+53 */
+background: rgb(255,153,51); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(255,153,51,1) 0%, rgba(102,51,17,1) 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9933', endColorstr='#663311',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+box-shadow: 0 1px 6px rgba(0,0,0,.5);
+text-shadow: 2px 2px 2px #000;
 }
 
 .hours ul{
