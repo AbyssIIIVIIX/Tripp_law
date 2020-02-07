@@ -23,6 +23,7 @@ html, body {
     font-size: 1em;
     line-height: 1.5;
     color: #000;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946_960_720.jpg")
 }
 
 .sr-only {
@@ -165,6 +166,8 @@ a.pure-button-primary {
 @media(min-width:468px){
     .container-1{
       display:flex;
+
+      
       /*
       align-items:flex-start;
       align-items:flex-end;
@@ -172,6 +175,11 @@ a.pure-button-primary {
       
       flex-direction:column;
       */
+    }
+    .container-1 div{
+      padding:10px;
+      background:rgba(255, 255, 240, 0.7)
+
     }
     
     .container-2{
@@ -189,18 +197,24 @@ a.pure-button-primary {
       text-align: center;
     }
 
+    .container-2 div{
+      flex: 2;
+    }
+
+    form{
+      flex: 2;
+    }
+
+
     .container-3{
       display: flex;
       font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
 
     }
+  
   }
 
 
-  .container-1 div, .container-2 div, .container-3 div{
-    border:1px #ccc solid;
-    padding:10px;
-  }
 
 
 
@@ -271,7 +285,7 @@ a.pure-button-primary {
   }
   
   .flex-outer li button {
-    margin-left: auto;
+    margin-left: 60%;
     padding: 8px 16px;
     border: none;
     background: #333;
@@ -304,4 +318,17 @@ a.pure-button-primary {
     flex: 3;
   
 }
+
+footer {
+  color: #fff;
+  background: #222;
+  padding: 1em;
+}
+
+.container-3 .policy, h5, ul{
+  flex: 2;
+}
+
+
+
 
