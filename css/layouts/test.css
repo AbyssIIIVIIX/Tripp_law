@@ -1,0 +1,302 @@
+/* * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+/* test header */
+
+ * {
+    box-sizing: border-box;
+}
+::-moz-selection {
+    background: #F34A4E;
+    color: #FFF;
+}
+::selection {
+    background: #F34A4E;
+    color: #FFF;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000;
+}
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.main-header {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9933+0,663311+53 */
+background: rgb(255,153,51); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(255,153,51,1) 0%, rgba(102,51,17,1) 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9933', endColorstr='#663311',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+box-shadow: 0 1px 6px rgba(0,0,0,.5);
+}
+.logo {
+    margin: 0 0 -10px;
+}
+.main-nav a {
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* letter-spacing: 0.1em; */
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #000;
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    margin-top: 4em;
+    text-align: center;
+}
+.center a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #F34A4E;
+    border-bottom: 1px solid #F34A4E;
+    transition: all .275s;
+}
+.center a:hover,
+.center a:focus {
+    opacity: 0.8;
+    padding-bottom: 2px;
+    border-bottom-color: rgba(243, 74, 95, .5);
+}
+
+/**
+ * Flex & layout things:
+ * — Mobile first
+ * — Responsive
+ */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 1100px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.main-header .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-nav ul {
+    margin: 1em 0 .5em;
+    text-align: center;
+}
+.main-nav li {
+    display: inline;
+}
+.main-nav a {
+    display: inline-block;
+    padding: .5em 1.5em;
+}
+
+@media (min-width:960px) {
+    .main-header .container {
+        justify-content: space-between;
+    }
+}
+/* ----------------------------------------------------------------- */
+.main .container {
+    width: 100%;
+    flex-basis: 65%;
+    align-items: center;
+    background-image:  url("/img/common/11568.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* town center pic */
+.splash {
+    display: flex;
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    padding: 1em;
+    background-image: url("https://vabeachtowncenter.com/wp-content/uploads/tcnight.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.splash-head {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.pure-button {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9933+0,663311+53 */
+    background: rgb(255,153,51); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(255,153,51,1) 0%, rgba(102,51,17,1) 53%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9933', endColorstr='#663311',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 0 1px 6px rgba(0,0,0,.5);
+    padding: 1em 3em;
+    border-radius: 5px;
+}
+
+a.pure-button-primary {
+    color: rgb(255,153,51, 0.8);;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 120%;
+    margin: auto;
+}
+
+@media(min-width:468px){
+    .container-1{
+      display:flex;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+    }
+    
+    .container-2{
+      display:flex;  
+      /*
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-around;
+      */
+      font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+      background:url("https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-1-900x900.jpg");
+      color: #fff;
+      padding: 50px 0;;
+      text-align: center;
+    }
+  }
+
+
+  .container-1 div, .container-2 div, .container-3 div{
+    border:1px #ccc solid;
+    padding:10px;
+  }
+
+
+
+  .content h2 {
+      text-align: center;
+  }
+  /* Sign up form ------------------------------------------ */
+ 
+  
+  .container-2 * {
+    box-sizing: border-box;
+  }
+  
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
+  
+  .flex-inner li {
+    width: 100px;
+  }
+
+  .box-1 {
+      flex: 2;
+      
+}
+
+  .box-2 {
+    flex: 2;
+  
+  }
+
+  .box-3 {
+    flex: 2;
+  
+}
+
+.box-4 {
+    flex: 3;
+    align-items: flex-end;
+   
+}
+
