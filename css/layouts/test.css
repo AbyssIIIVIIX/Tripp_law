@@ -161,6 +161,11 @@ a.pure-button-primary {
     margin: auto;
 }
 
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+  background-color:rgb(255,153,51, 0.8);
+  color: #fff;
+}
+
 @media(min-width:468px){
     .container-1{
       display:flex;
@@ -212,7 +217,6 @@ a.pure-button-primary {
     .about-container{
       display: flex;
       padding: 1em;
-      justify-content: space-between;
     }
 
     footer {
@@ -237,14 +241,27 @@ a.pure-button-primary {
   }
 
 
-.about-container div{
+.about-container .tripp{
   flex: 2;
+  order: 2;
 }
+
+.about-container .tripp img{
+width: 100%;
+margin: auto;
+}
+
+.about-container #about{
+  flex: 2;
+  order: 1;
+}
+
 
 #about {
   background: rgba(255, 255, 240, 0.7);
   padding: 1em;
 }
+
   .content h2 {
       text-align: center;
   }
