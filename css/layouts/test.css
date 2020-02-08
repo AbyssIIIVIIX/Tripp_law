@@ -202,7 +202,7 @@ a.pure-button-primary {
       font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
       background:url("https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-1-900x900.jpg");
       color: #fff;
-      padding: 50px 0;
+      padding: 10px 0;
       text-align: center;
     }
 
@@ -212,6 +212,7 @@ a.pure-button-primary {
 
     form{
       flex: 2;
+      padding: 8px;
     }
 
     .container-3{
@@ -220,10 +221,6 @@ a.pure-button-primary {
       align-items: center;
     }
 
-    .about-container{
-      display: flex;
-      padding: 1em;
-    }
 
     footer {
       color: #fff;
@@ -246,15 +243,29 @@ a.pure-button-primary {
   
   }
 
+@media(min-width:680px){
+  .about-container{
+    display: flex;
+  }
+  
+  .about-container .tripp img{
+    width: 85%;
+    margin: auto;
+  
+    }
+
+}
 
 .about-container .tripp{
   flex: 2;
+  padding: 5em;
 }
 
-.about-container .tripp img{
-width: 60%;
-margin-left: 20%;
-}
+
+  
+
+
+
 
 .about-container #about{
   flex: 2;
@@ -266,9 +277,7 @@ margin-left: 20%;
   padding: 1em;
 }
 
-  .content h2 {
-      text-align: center;
-  }
+
   /* Sign up form ------------------------------------------ */
  
   
@@ -367,29 +376,11 @@ margin-left: 20%;
   
 }
 
-.hours{
-text-align: center;
-color: #fff;
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9933+0,663311+53 */
-background: rgb(255,153,51); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(255,153,51,1) 0%, rgba(102,51,17,1) 53%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9933', endColorstr='#663311',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-box-shadow: 0 1px 6px rgba(0,0,0,.5);
-text-shadow: 2px 2px 2px #000;
-}
 
-.hours ul{
-  margin: auto;
-  font-size:20px;
-  font-weight: bold;
-  list-style: none;
-}
+    
+    
 
-.hours ul li{
-  display: inline;
-}
+
 
 
 
