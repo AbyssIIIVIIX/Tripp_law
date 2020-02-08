@@ -8,6 +8,12 @@
  * {
     box-sizing: border-box;
 }
+.list{
+  display: flex;
+}
+.list ul{
+  flex: 2;
+}
 ::-moz-selection {
     background: #F34A4E;
     color: #FFF;
@@ -171,9 +177,10 @@ a.pure-button-primary {
   color: #fff;
 }
 
-@media(min-width:468px){
+
     .container-1{
       display:flex;
+      flex-wrap: wrap;
 
       
       /*
@@ -188,6 +195,7 @@ a.pure-button-primary {
     
     .container-2{
       display:flex;
+      background-image: url("https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-1-900x900.jpg");
       flex-wrap: wrap;  
       /*
       justify-content:flex-start;
@@ -196,15 +204,24 @@ a.pure-button-primary {
       justify-content:space-around;
       */
       font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-      background:url("https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-1-900x900.jpg");
       color: #fff;
-      padding: 10px 0;
-      text-align: center;
+      justify-content: space-around;
+    }
+
+    .container-2 .consult{
+      flex: 2;
     }
 
     .container-2 div{
+      padding: 1em;
+    }
+    .container-2 form{
       flex: 2;
     }
+    .container-2 ul{
+      flex: 3;
+    }
+
 
     form{
       flex: 2;
@@ -236,8 +253,31 @@ a.pure-button-primary {
       flex: 2;
       margin-right: 2em;
     }
+    
   
-  }
+
+
+
+.box-1 {
+    flex: 2;
+    
+}
+
+.box-2 {
+  flex: 2;
+
+}
+
+.box-3 {
+  flex: 2;
+
+}
+
+.box-4 {
+  flex: 2;
+
+}
+
 
 @media(min-width:680px){
   .about-container {
@@ -263,17 +303,9 @@ a.pure-button-primary {
   text-justify: justify;
   padding: 1em;
 }
-
-
-
-
-
   /* Sign up form ------------------------------------------ */
  
   
-  .container-2 * {
-    box-sizing: border-box;
-  }
   
   .flex-outer,
   .flex-inner {
@@ -346,25 +378,6 @@ a.pure-button-primary {
     width: 15000px;
   }
 
-  .box-1 {
-      flex: 2;
-      
-}
-
-  .box-2 {
-    flex: 2;
-  
-  }
-
-  .box-3 {
-    flex: 2;
-  
-}
-
-  .box-4 {
-    flex: 3;
-  
-}
 
 
     
