@@ -176,21 +176,28 @@ a.pure-button-primary {
   background-color:rgb(255,153,51, 0.8);
   color: #fff;
 }
+@media(min-width: 580px){
+  .container-1{
+    display:flex;
+
+    
+    /*
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items:center;
+    
+    flex-direction:column;
+    */
+  }
+}
+
+.container-1 div{
+  background: rgba(255, 255, 255, .5);
+
+}
 
 
-    .container-1{
-      display:flex;
-      flex-wrap: wrap;
 
-      
-      /*
-      align-items:flex-start;
-      align-items:flex-end;
-      align-items:center;
-      
-      flex-direction:column;
-      */
-    }
 
     
     .container-2{
@@ -292,6 +299,9 @@ a.pure-button-primary {
 
 .about-container ul{
   list-style-type: square;
+}
+.about-container div{
+  background: rgba(255, 255, 255, .5);
 }
 .tripp{
   flex: 2;
