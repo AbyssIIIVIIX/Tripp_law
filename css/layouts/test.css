@@ -185,11 +185,7 @@ a.pure-button-primary {
       flex-direction:column;
       */
     }
-    .container-1 div{
-      padding:10px;
-      background:rgba(255, 255, 240, 0.7)
 
-    }
     
     .container-2{
       display:flex;  
@@ -252,8 +248,12 @@ a.pure-button-primary {
     width: 85%;
     margin: auto;
   
-    }
+  }
 
+  .container-1 div{
+    padding:10px;
+    background:rgba(255, 255, 240, 0.7)
+  }
 }
 
 .about-container .tripp{
@@ -261,16 +261,9 @@ a.pure-button-primary {
   padding: 5em;
 }
 
-
-  
-
-
-
-
 .about-container #about{
   flex: 2;
 }
-
 
 #about {
   background: rgba(255, 255, 240, 0.7);
