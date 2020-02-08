@@ -34,12 +34,11 @@ html, body {
     overflow: hidden;
 }
 .main-header {
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9933+0,663311+53 */
-background: rgb(255,153,51); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(255,153,51,1) 0%, rgba(102,51,17,1) 53%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(255,153,51,1) 0%,rgba(102,51,17,1) 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9933', endColorstr='#663311',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background:url("https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood-texture-1-900x900.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: repeat-x;
+
 box-shadow: 0 1px 6px rgba(0,0,0,.5);
 }
 .logo {
@@ -188,7 +187,8 @@ a.pure-button-primary {
 
     
     .container-2{
-      display:flex;  
+      display:flex;
+      flex-wrap: wrap;  
       /*
       justify-content:flex-start;
       justify-content:flex-end;
@@ -240,35 +240,32 @@ a.pure-button-primary {
   }
 
 @media(min-width:680px){
-  .about-container{
+  .about-container {
     display: flex;
-  }
-  
-  .about-container .tripp img{
-    width: 85%;
-    margin: auto;
-  
+    flex-wrap: wrap;
   }
 
-  .container-1 div{
-    padding:10px;
-    background:rgba(255, 255, 240, 0.7)
+  .about-container img{
+    width: 80%;
   }
 }
 
-.about-container .tripp{
+.about-container ul{
+  list-style-type: square;
+}
+.tripp{
   flex: 2;
-  padding: 5em;
+  text-align: center;
 }
 
-.about-container #about{
+.text{
   flex: 2;
-}
-
-#about {
-  background: rgba(255, 255, 240, 0.7);
+  text-justify: justify;
   padding: 1em;
 }
+
+
+
 
 
   /* Sign up form ------------------------------------------ */
