@@ -371,6 +371,7 @@ a.pure-button-primary {
   .flex-outer li textarea {
     padding: 15px;
     border: none;
+    color: #000;
   }
   
   .flex-outer li button {
@@ -388,9 +389,6 @@ a.pure-button-primary {
     width: 15000px;
   }
 
-
-
-    
     
 
 
