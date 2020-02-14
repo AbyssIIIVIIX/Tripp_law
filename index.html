@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-
+<!-- Designed By Anything Media Solutions - Brian Collette -->
 <head>
 <meta property="og:title" content="Town Center Law">
 <meta property="og:description" content="Offering our Law services to the Hampton Roads area.">
@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 <link rel="stylesheet" href="css/layouts/style.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="main.js"></script>
 </head>
 
 <body>
@@ -157,30 +159,31 @@
                 </p>
                 <img src="img/common/consult.jpg" alt="">
             </div>
-            <form method="post" action="contactform.php" method="POST" >
+            <form action="https://formspree.io/thaibxer87@gmail.com"
+            method="POST">
                 <ul class="flex-outer">
                 <li>
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="fname" placeholder="Enter your first name here">
+                        <input type="text" class="first-name" name="fname" placeholder="Enter your first name here">
                 </li>
                 <li>
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="lname" placeholder="Enter your last name here">
+                        <input type="text" class="last-name" name="lname" placeholder="Enter your last name here">
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="mail" placeholder="Enter your email here">
+                    <input type="email" class="email" name="mail" placeholder="Enter your email here">
                 </li>
                 <li>
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone here">
+                        <input type="tel" class="phone" name="phone" placeholder="Enter your phone here">
                 </li>
                 <li>
                     <label for="message">Message</label>
-                    <textarea rows="6" id="message" name="message" placeholder="Enter your message here"></textarea>
+                        <textarea rows="6" class="message" placeholder="Enter your message here"></textarea>
                 </li>
                 <li>
-                    <button type="submit" name="submit">Send</button>
+                    <button type="submit" class="submit">Send</button>
                 </li>
                 </ul>
             </form>
