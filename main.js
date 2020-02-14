@@ -5,8 +5,8 @@ $(document).ready(function () {
         event.preventDefault()
         console.log('Button Has Been Clicked')
 
-        var fname = $('.fname')
-        var lname = $('.lname')
+        var fname = $('.fname').val()
+        var lname = $('.lname').val()
         var email = $('.email').val()
         var phone = $('.phone').val()
         var message = $('.message').val()
@@ -33,7 +33,7 @@ $(document).ready(function () {
             event.preventDefault()
             statusElm.append("<div>Message Is Invalid</div>")
         }
-        
+
         if(fname.length >= 3) {
             statusElm.append("<div>First Name Is Valid</div>")
         } else {
